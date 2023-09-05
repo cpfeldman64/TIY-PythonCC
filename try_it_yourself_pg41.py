@@ -55,6 +55,8 @@ dinner_guests.insert(-1, new_guests[-1])
 
 print(f'The new guest list will include:\n{dinner_guests}.\n')
 
+print(f'{len(dinner_guests)} is the number of guests in attendance.\n')
+
 # Table not ready! Pop()
 
 print(
@@ -84,4 +86,8 @@ print(f'\nThe new guest list will include:\n{dinner_guests}.\n')
 dinner_over = ('Dinner is now over!')
 thank_you = f' {dinner_guests[0].title()}, {dinner_guests[1].title()}, thank you for coming!'
 print(dinner_over + thank_you)
+dinner_guests.remove('john green')
+dinner_guests.remove('brandon sanderson')
+
+print(f'\n{len(dinner_guests)} is the number of guests left at the restaurant.')
 
