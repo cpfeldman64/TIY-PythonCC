@@ -60,3 +60,26 @@ for river in rivers:
 
 for location in rivers.values():
     print(f'\n{location}')
+
+print('\n\n\n\n\n')
+
+# Polling
+
+favorite_languages = {
+    'connor': 'python',
+    'austin': 'javascript',
+    'hope': 'c#',
+    'josh': 'c++',
+    'andy': 'php',
+}
+
+people_to_poll = ['connor', 'ty', 'root', 'josh', 'jared']
+
+for people in people_to_poll:
+    if people in favorite_languages.keys():
+        print(f'\n{people.title()}, thanks for polling!')
+    else:
+        print(f'\n{people.title()}, come take the poll!') 
+
+# whoo !
+
